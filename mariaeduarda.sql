@@ -5,9 +5,8 @@ CREATE DATABASE hospital;
 CREATE TABLE pacientes ( 
     id_paciente SERIAL PRIMARY KEY,
     nome_completo VARCHAR(140) NOT NULL,
-    cpf INT,
-    email VARCHAR(130) UNIQUE NOT NULL,
-    sintoma VARCHAR(150)
+    cpf VARCHAR(11),
+    email VARCHAR(130) UNIQUE NOT NULL
 );
 
 CREATE TABLE medicos (
